@@ -1,75 +1,54 @@
 # Projeto 01 - Concessão de Cartões de Crédito
 
-## Introdução
+1. Entendimento do Negócio:
 
-Este projeto tem como objetivo desenvolver um modelo preditivo para identificar o risco de inadimplência em concessões de cartões de crédito. Utilizaremos a metodologia CRISP-DM (Cross-Industry Standard Process for Data Mining) para guiar nossas etapas.
+Objetivos: Desenvolver um modelo preditivo para auxiliar os mutuários em suas decisões de crédito.
+Atividades: Avalie a situação do setor, entenda o público-alvo, identifique problemas e planeje o projeto.
+2. Entendimento dos Dados:
 
-Etapa 1: CRISP-DM - Entendimento do Negócio
+Exploração do dicionário de dados.
+Carregamento dos pacotes necessários e dos dados.
+3. Preparação dos Dados:
 
-Objetivos do Negócio:
+Operações típicas: seleção, limpeza, construção, integração e formatação.
+Tratamento de dados faltantes.
+4. Modelagem:
 
-Desenvolver um modelo preditivo para auxiliar o cliente na avaliação de suas próprias decisões de crédito.
+Seleção da técnica: Utilização do algoritmo RandomForestClassifier.
+Desenho do teste: Divisão da base em treinamento e teste.
+Avaliação do modelo: Cálculo da acurácia.
+5. Avaliação dos Resultados:
 
-Objetivos da Modelagem:
+Matriz de Confusão para avaliação do impacto financeiro.
+Exemplo simples: Lucro dos bons pagadores x Prejuízo dos maus pagadores.
+6. Implantação:
 
-Construir o melhor modelo preditivo para identificar o risco de inadimplência.
+Utilização do modelo em um motor de crédito para decisões automatizadas.
+Instruções Detalhadas:
 
-Atividades do CRISP-DM:
+Etapa 1 - Entendimento do Negócio:
 
-Avaliar a situação do setor de concessão de cartões de crédito.
+Observe os objetivos do negócio e as atividades do CRISP-DM.
+Analise o problema de concessão de cartões de crédito e estabeleça metas claras.
+Etapa 2 - Entendimento dos Dados:
 
-Entender o tamanho do público, relevância e problemas presentes.
+Consulte o dicionário de dados para compreender as variáveis.
+Carregue os pacotes necessários e os dados do arquivo CSV.
+Etapa 3 - Preparação dos Dados:
 
-Construir um planejamento do projeto.
+Realize operações de seleção, limpeza e formatação.
+Trate dados faltantes e converta variáveis categóricas em dummy.
+Etapa 4 - Modelagem:
 
-Etapa 2: CRISP-DM - Entendimento dos Dados
+Importe bibliotecas como pandas, seaborn, matplotlib.pyplot e os módulos necessários do sklearn.
+Carregue os dados e divida a base em treinamento e teste.
+Utilize RandomForestClassifier para treinar o modelo e avalie a acurácia.
+Etapa 5 - Avaliação dos Resultados:
 
-Dicionário de Dados:
+Crie a matriz de confusão para avaliar o impacto financeiro do modelo.
+Considere o exemplo simples: Lucro dos bons pagadores x Prejuízo dos maus pagadores.
+Etapa 6 - Implantação:
 
-Variáveis como sexo, posse de veículo/imóvel, quantidade de filhos, tipo de renda, educação, estado civil, entre outras.
-
-Carregando Pacotes e Dados:
-
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
-from sklearn import metrics
-from sklearn.ensemble import RandomForestClassifier
-
-df = pd.read_csv('caminho/do/arquivo.csv')
-
-Etapa 3: CRISP-DM - Preparação dos Dados
-
-Operações com Dados:
-
-Seleção, limpeza, construção, integração e formatação.
-Tratamento de Dados Faltantes:
-
-df = df.dropna()
-
-Etapa 4: CRISP-DM - Modelagem
-
-Seleção da Técnica de Modelagem:
-
-Utilizaremos o algoritmo RandomForestClassifier.
-
-Desenho do Teste:
-
-Divisão da base em treinamento e teste.
-Avaliação do Modelo:
-
-Verificação da acurácia.
-
-clf = RandomForestClassifier(n_estimators=10)
-clf.fit(x_train, y_train)
-y_pred = clf.predict(x_test)
-acc = metrics.accuracy_score(y_test, y_pred)
-Etapa 5: CRISP-DM - Avaliação dos Resultados
-Matriz de Confusão:
-Avaliação do impacto financeiro.
-Exemplo Simples:
-Lucro dos bons pagadores x Prejuízo dos maus pagadores.
-Etapa 6: CRISP-DM - Implantação
-Utilização do Modelo:
-Implementação em um motor de crédito para tomada de decisões automatizada.
+Utilize o modelo treinado em um motor de crédito para decisões automatizadas.
+Observação Importante:
+Certifique-se de substituir 'caminho/do/arquivo.csv' pelo caminho correto do seu conjunto de dados ao utilizar o código.
