@@ -13,7 +13,7 @@ Avalie a situação do setor, entenda o público-alvo, identifique problemas e p
 ### Exploração do dicionário de dados.
 Carregamento dos pacotes necessários e dos dados.
 
-### 3. Preparação dos Dados:
+## 3. Preparação dos Dados:
 
 Operações típicas: seleção, limpeza, construção, integração e formatação.
 Tratamento de dados faltantes.
@@ -24,7 +24,7 @@ Seleção da técnica: Utilização do algoritmo RandomForestClassifier.
 Desenho do teste: Divisão da base em treinamento e teste.
 Avaliação do modelo: Cálculo da acurácia.
 
-### 5. Avaliação dos Resultados:
+## 5. Avaliação dos Resultados:
 
 Matriz de Confusão para avaliação do impacto financeiro.
 Exemplo simples: Lucro dos bons pagadores x Prejuízo dos maus pagadores.
